@@ -29,7 +29,7 @@ namespace GuessNumberGame
                             break;
                         default:
                             Console.Clear();
-                            WriteLineInColor(ConsoleColor.Red, "Selected wrong option, please try again.");
+                            WriteLineInColor(ConsoleColor.Red, "You have selected the wrong option, try again.");
                             break;
                     }
                 }

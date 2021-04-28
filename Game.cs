@@ -7,7 +7,7 @@ namespace GuessNumberGame
     {
         public static void Start()
         {
-            List<UserNumberModel> userGuessList = new();
+            List<UserGuessModel> userGuessList = new();
             int randomNumber = GetRandomNumber();
             int userNumber = -1;
             int counter = 0;
@@ -21,7 +21,7 @@ namespace GuessNumberGame
                     counter++;
                     string information = GetInformationAboutQuessNumber(randomNumber, userNumber);
 
-                    userGuessList.Add(new UserNumberModel()
+                    userGuessList.Add(new UserGuessModel()
                     {
                         NumberOfGuess = counter,
                         Information = information,
@@ -39,7 +39,7 @@ namespace GuessNumberGame
             ShowInformationAboutCurrentGame(userGuessList);
         }
 
-        private static void ShowInformationAboutCurrentGame(List<UserNumberModel> userGuessList)
+        private static void ShowInformationAboutCurrentGame(List<UserGuessModel> userGuessList)
         {
             Program.WriteLineInColor(ConsoleColor.Blue, "Information about game: ");
             Program.WriteLineInColor(ConsoleColor.Blue, "| Guess number | value | information |");

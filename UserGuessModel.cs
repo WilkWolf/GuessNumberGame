@@ -1,6 +1,6 @@
 ﻿namespace GuessNumberGame
 {
-    public class UserNumberModel
+    public class UserGuessModel
     {
         public int NumberOfGuess { get; set; }
         public int Value { get; set; }
